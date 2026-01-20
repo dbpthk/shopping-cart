@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <div>
-        <h1>Hello, World!</h1>
+        <h1>Custom hooks class</h1>
       </div>
     </>
   );

@@ -34,17 +34,24 @@ header {
   padding-bottom: 20px;
   border-bottom: 1px solid var(--border);
 }
-
+header h1 {
+  text-align: center;
+}
 main {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 40px;
+  gap: 100px;
 }
 
 .products {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 24px;
+  gap: 240px;
+}
+.display-products {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 .product-card {
@@ -55,6 +62,7 @@ main {
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
 }
 
 .product-card:hover {

@@ -1,5 +1,5 @@
 import { FaTrash, FaMinus, FaPlus } from "react-icons/fa";
-const CartItem = ({ item, onUpdateQuantity, onRemove }) => {
+const CartItem = ({ item, onUpdateQuantity, removeFromCart }) => {
   return (
     <div className="cart-item">
       <div className="item-details">
@@ -14,7 +14,7 @@ const CartItem = ({ item, onUpdateQuantity, onRemove }) => {
             <FaPlus />
           </button>
         </div>
-        <button className="remove-btn" onClick={() => onRemove(item.id)}>
+        <button className="remove-btn" onClick={() => removeFromCart(item.id)}>
           <FaTrash />
         </button>
       </div>
